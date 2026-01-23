@@ -49,109 +49,156 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <div class="nav">
       <div class="container">
-        <div
-          class="row d-flex justify-content-end align-items-center align-content-center"
-        >
+        <div class="row d-flex justify-content-end align-items-center align-content-center">
           <div class="col-sm-6 search-container">
             <form action="/search">
               <input type="text" placeholder="Search..." />
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
-          <div
-            class="col-sm-6 bar d-flex justify-content-end align-items-center align-content-center"
-          >
+
+          <div class="col-sm-6 bar d-flex justify-content-end align-items-center align-content-center">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
     </div>
-    <!-- navbar ended -->
+
     <!-- landing page started -->
     <section class="homepage1">
       <div class="container">
         <h1>Get Right Solution<br />for your Business</h1>
         <hr class="line1" />
+
         <div class="row d-flex justify-content-evenly">
           <div class="col-md-4 col1">
             <div class="ic d-flex justify-content-center">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
+              <div class="icon d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-people-group"></i>
               </div>
             </div>
 
             <h2>LEADERSHIP</h2>
-            <p>
-              Our multicultural leaders have deep start-up and enterprise
-              experience, with rich mobile and data expertise.
-            </p>
 
-            <!-- updated biography card -->
-            <div class="bio-card">
-              <h3 class="bio-name">Asha Kapoor</h3>
-              <p class="bio-role"><strong>Role:</strong> Senior Product Manager</p>
+            <div class="bio-card animate-on-scroll">
+              <h3 class="bio-name">Anjana Bhattrai</h3>
+              <p class="bio-role"><strong>Role:</strong> Quality Assurance</p>
               <p class="bio-exp"><strong>Experience:</strong> 10 years — startups & enterprise</p>
               <p class="bio-location"><strong>Location:</strong> Bengaluru, India</p>
-              <p class="bio-contact"><strong>Email:</strong> asha.k@example.com</p>
+              <p class="bio-contact"><strong>Email:</strong> anjana.k@example.com</p>
               <p class="bio-skills"><strong>Skills:</strong> Product strategy, UX, data-driven growth</p>
               <p class="bio-predict">Predicted next role: Head of Product (76% confidence)</p>
-              <p class="bio-text">Asha combines startup grit and enterprise strategy to drive cross-functional teams and rapid product growth. Available for mentoring and advisory.</p>
+              <p class="bio-text">
+                Anjana combines startup grit and enterprise strategy to drive cross-functional teams and rapid product growth. Available for mentoring and advisory.
+              </p>
             </div>
           </div>
+
           <div class="col-md-4 col2">
             <div class="ic d-flex justify-content-center">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
+              <div class="icon d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-stairs"></i>
               </div>
             </div>
-            <h2>CAREERS</h2>
-            <p>
-              We take great pride in our market leadership position, thanks to
-              the hard work of our incredibly talented.
-            </p>
 
-            <!-- updated biography card -->
-            <div class="bio-card">
-              <h3 class="bio-name">Miguel Reyes</h3>
+            <h2>CAREERS</h2>
+
+            <div class="bio-card animate-on-scroll">
+              <h3 class="bio-name">Shreejal Dhungana</h3>
               <p class="bio-role"><strong>Role:</strong> Backend Engineer</p>
-              <p class="bio-exp"><strong>Experience:</strong> 6 years — distributed systems</p>
-              <p class="bio-location"><strong>Location:</strong> Mexico City, Mexico</p>
-              <p class="bio-contact"><strong>Email:</strong> miguel.r@example.com</p>
+              <p class="bio-exp"><strong>Experience:</strong> 5 years — distributed systems</p>
+              <p class="bio-location"><strong>Location:</strong> Budhanilkantha Kathmandu, Nepal</p>
+              <p class="bio-contact"><strong>Email:</strong> shreejal.d@example.com</p>
               <p class="bio-skills"><strong>Skills:</strong> Go, Node.js, system design, mentoring</p>
               <p class="bio-predict">Predicted next role: Senior Engineer (64% confidence)</p>
-              <p class="bio-text">Miguel focuses on scalable backend systems and mentors junior developers to speed team delivery. Open to speaking at meetups.</p>
+              <p class="bio-text">
+                Shreejal focuses on scalable backend systems and mentors junior developers to speed team delivery. Open to speaking at meetups.
+              </p>
             </div>
           </div>
+
           <div class="col-md-4 col3">
             <div class="ic d-flex justify-content-center">
-              <div
-                class="icon d-flex justify-content-center align-items-center"
-              >
+              <div class="icon d-flex justify-content-center align-items-center">
                 <i class="fa-regular fa-handshake"></i>
               </div>
             </div>
 
             <h2>PARTNERSHIPS</h2>
-            <p>
-              From research, to events, to platform partnerships, we work with
-              thought leaders to provide more actionable data.
-            </p>
 
-            <!-- added biography card -->
-            <div class="bio-card">
-              <h3 class="bio-name">Name: Priya S.</h3>
-              <p class="bio-age">Age: 31</p>
+            <div class="bio-card animate-on-scroll">
+              <h3 class="bio-name">Kanchan Basnet</h3>
+              <p class="bio-age">Age: 22</p>
               <p class="bio-predict">Predicted next role: Director of Partnerships (82% confidence)</p>
-              <p class="bio-text">Priya builds strategic alliances that expand market reach and create joint value for partners.</p>
+              <p class="bio-text">Kanchan builds strategic alliances that expand market reach and create joint value for partners.</p>
             </div>
           </div>
+        </div>
+
+        <!-- Carousel of featured cards (Bootstrap 4) -->
+        <div id="bioCarousel" class="carousel slide mt-5" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#bioCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bioCarousel" data-slide-to="1"></li>
+            <li data-target="#bioCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-card d-flex flex-column flex-md-row align-items-center">
+                <img src="https://i.pinimg.com/736x/c5/fa/21/c5fa21497f0046dfe5209bbd535bd491.jpg" class="card-avatar" alt="Anjana" />
+                <div class="card-body">
+                  <h4>Anjana Bhattrai</h4>
+                  <p>Seasoned QA lead who improves release velocity with strong automation and test strategy.</p>
+                  <div class="card-tags">
+                    <span>Automation</span><span>Testing</span><span>Mentoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-card d-flex flex-column flex-md-row align-items-center">
+                <img src="https://source.unsplash.com/collection/888146/201x201" class="card-avatar" alt="Shreejal" />
+                <div class="card-body">
+                  <h4>Shreejal Dhungana</h4>
+      
+                  <p>Backend engineer focused on resilient distributed systems and developer experience.</p>
+                  <div class="card-tags">
+                    <span>Go</span><span>System Design</span><span>APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-card d-flex flex-column flex-md-row align-items-center">
+                <img src="https://source.unsplash.com/collection/888146/202x202" class="card-avatar" alt="Kanchan" />
+                <div class="card-body">
+                  <h4>Kanchan Basnet</h4>
+        
+                  <p>Strategic partnerships lead building alliances and co-marketing programs that expand reach.</p>
+                  <div class="card-tags">
+                    <span>Strategy</span><span>Alliances</span><span>Events</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#bioCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#bioCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </section>
@@ -160,53 +207,64 @@
       <div class="container">
         <div class="row1">
           <div class="row">
-            <div
-              class="col-md-3 col1 d-flex justify-content-center align-content-center align-items-center"
-            >
-              <div
-                class="music d-flex justify-content-center align-content-center align-items-center"
-              >
+            <div class="col-md-3 col1 d-flex justify-content-center align-content-center align-items-center">
+              <div class="music d-flex justify-content-center align-content-center align-items-center">
                 <i class="fa-solid fa-headphones"></i>
               </div>
             </div>
-            <div class="col-md-8 colm">
 
-             <div class="row row-gap">
-              <div class="col-md-4 col2">
-                <hr />
-                <h2>Fast Online <br />Support</h2>
+            <div class="col-md-8 colm">
+              <div class="row row-gap">
+                <div class="col-md-4 col2">
+                  <hr />
+                  <h2>Fast Online <br />Support</h2>
+                </div>
+
+                <div class="col-md-4 col3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto ratione quos amet inventore reiciendis fugiat nobis nostrum laborum velit, sequi vel adipisci ipsam vitae et recusandae? Beatae, voluptatum. Repellendus!
+                    <br /><br />
+                    Image from <span class="hr-line">Freepik</span>
+                  </p>
+                </div>
               </div>
-              <div class="col-md-4 col3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  architecto ratione quos amet inventore reiciendis fugiat nobis
-                  nostrum laborum velit, sequi vel adipisci ipsam vitae et
-                  recusandae? Beatae, voluptatum. Repellendus!<br />
-                  <br />
-                  Image from <span class="hr-line">Freepik</span>
-                </p>
-              </div>
-             </div>
             </div>
           </div>
         </div>
+
         <div class="row2">
           <div class="row">
             <div class="col-md-4 col1">
               <h1>01</h1>
-
             </div>
+
             <div class="col-md-8 col2">
               <p>
-                Magna eget est lorem ipsum dolor sit amet consectetur. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Interdum velit laoreet id donec ultrices. Euismod in pellentesque massa placerat duis. Urna condimentum mattis pellentesque id. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+                Magna eget est lorem ipsum dolor sit amet consectetur. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque.
               </p>
-              <input type="button" value="Learn More">
+              <input type="button" value="Learn More" />
             </div>
           </div>
-
         </div>
       </div>
     </section>
+
+    <!-- scripts: intersection observer to trigger CSS animations -->
+    <script>
+      (function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+      })();
+    </script>
   </body>
 </html>
 <!-- 
