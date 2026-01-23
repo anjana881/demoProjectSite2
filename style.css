@@ -204,3 +204,28 @@
    padding-top: 50px;
 padding-bottom: 50px;
 } */
+
+.card-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;    /* crop to fill */
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: block;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* smaller avatars on narrow screens */
+@media (max-width: 767px) {
+  .card-avatar {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+/* ensure general images keep responsive behaviour except avatars */
+img:not(.card-avatar) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
